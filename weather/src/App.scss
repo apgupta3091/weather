@@ -1,0 +1,17 @@
+.weather-container{
+    background-color: rgb(236, 235, 235);
+    display: inline-block;
+    height:200px;
+    width: 80%;
+    margin: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.min-max-container{
+    display: flex;
+    justify-content: space-between;
+}
