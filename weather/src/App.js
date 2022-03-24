@@ -8,16 +8,15 @@ function App() {
   const [data, setData] = useState({})
   let hi = "hi"
   
-  const url = `https://api.openweathermap.org/data/2.5/onecall?lat=40.71&lon=-74.00&exclude=hourly,minutely,currently&appid=8e69cb5b2085f8b636a1c05b630e8493`
+  const url = `https://api.openweathermap.org/data/2.5/weather?lat=40.71&lon=-74.00&appid=8e69cb5b2085f8b636a1c05b630e8493`
 
   
-  useEffect(() => {
-    axios.get(url).then(res => {
+  axios.get(url).then(res => {
       setData(data.res)
       console.log(data.res)
       console.log('hi')
-    })
-  },[hi])
+  })
+ 
 
 
   return (
